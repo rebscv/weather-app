@@ -1,8 +1,10 @@
+import "./WeatherCard.css";
+
 function WeatherCard ({ city, temperature, condition, humidity, wind}) {
 
     return (
         <section className="weather-card">
-            <div className="std-wrapper">
+            <div className="sml-wrapper">
 
                 <div className="weather-card-content">
 
@@ -13,7 +15,7 @@ function WeatherCard ({ city, temperature, condition, humidity, wind}) {
 
                     <div className="weather-card-details">
                         <div className="weather-card-col">
-                            <div className="weather-card-tag">Humidity:</div>
+                            <div className="weather-card-tag">Humidity: </div>
                             <div className="weather-card-results">{humidity}%</div>
                         </div>
                         <div className="weather-card-col">

@@ -1,0 +1,10 @@
+.weather-card-details {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.weather-card-col {
+    display: flex;
+    gap: 4px;
+}

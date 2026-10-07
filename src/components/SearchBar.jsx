@@ -11,7 +11,7 @@ function SearchBar ({ setCity }) {
 
     return (
         <section>
-            <div className="std-wrapper">
+            <div className="sml-wrapper">
 
                 <form onSubmit={handleSubmit}>   
 
