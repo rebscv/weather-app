@@ -1,4 +1,4 @@
-function WeatherCard () {
+function WeatherCard ({ city, temperature, condition, humidity, wind}) {
 
     return (
         <section className="weather-card">
@@ -6,19 +6,19 @@ function WeatherCard () {
 
                 <div className="weather-card-content">
 
-                    <h2>Melbourne</h2>
+                    <h2>{city}</h2>
 
-                    <p className="weather-card-temperature">18°C</p>
-                    <p>Partly cloudy</p>
+                    <p className="weather-card-temperature">{temperature}°C</p>
+                    <p>{condition}</p>
 
                     <div className="weather-card-details">
                         <div className="weather-card-col">
                             <div className="weather-card-tag">Humidity:</div>
-                            <div className="weather-card-results">65%</div>
+                            <div className="weather-card-results">{humidity}%</div>
                         </div>
                         <div className="weather-card-col">
                             <div className="weather-card-tag">Wind:</div>
-                            <div className="weather-card-results">12 km/h</div>
+                            <div className="weather-card-results">{wind} km/h</div>
                         </div>
                     </div>
 
